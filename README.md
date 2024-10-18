@@ -1,1 +1,2 @@
-# clicker_tap
+# Механика игры Clicker Tap.
+
