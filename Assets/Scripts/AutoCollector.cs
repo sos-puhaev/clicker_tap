@@ -28,7 +28,7 @@ public class AutoCollector : MonoBehaviour
     private void Update()
     {
         float timeLeft = collectInterval - (Time.time % collectInterval);
-        collectTimerText.text = "Next collect in: " + Mathf.CeilToInt(timeLeft).ToString() + "s";
+        collectTimerText.text = "Начисление через: " + Mathf.CeilToInt(timeLeft).ToString() + " сек.";
     }
 
     IEnumerator AutoCollect()
@@ -61,7 +61,7 @@ public class AutoCollector : MonoBehaviour
     {
         if (currencyText != null)
         {
-            currencyText.text = "Currency: " + totalCurrency.ToString();
+            currencyText.text = "Начисление: " + totalCurrency.ToString();
         }
         else
         {

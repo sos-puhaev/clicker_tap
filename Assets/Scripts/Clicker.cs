@@ -17,13 +17,13 @@ public class Clicker : MonoBehaviour
             totalCurrency += currencyEarned;
             energy--; 
             UpdateCurrencyUI(); 
-            Debug.Log("Currency Earned: " + currencyEarned + " | Total: " + totalCurrency);
+            Debug.Log("Заработанная валюта: " + currencyEarned + " | Итог: " + totalCurrency);
         }
     }
 
     private void UpdateCurrencyUI()
     {
-        currencyText.text = "Currency: " + totalCurrency.ToString();
+        currencyText.text = totalCurrency.ToString();
     }
 
     private int CalculateCurrencyEarned()
